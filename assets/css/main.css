@@ -361,17 +361,17 @@ main .content {
     margin: 2em 1em;
     background: rgba(255, 255, 255, .7);
     text-align: center;
-    border-radius: 5px;
+    border-radius: 20px;
     animation: content .5s 2.2s both;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     overflow: hidden;
-    width: 60em;
+    width: 55em;
     height: 30em;
 }
 
 .left {
-    width: 20%;
-    background: rgba(0, 0, 0, 0.7);
+    width: 25%;
+    background: #ff69699e;
     padding: 1em;
     display: flex;
     flex-direction: column;
