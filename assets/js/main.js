@@ -1,4 +1,4 @@
-var api = "http://www.icystal.top/";
+var api = "https://www.icystal.top/";
 
 $(document).ready(function () {
     $(".loading").hide();
