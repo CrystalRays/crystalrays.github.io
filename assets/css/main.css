@@ -360,25 +360,29 @@ main .content {
     margin: 2em 1em;
     background: rgba(255, 255, 255, .7);
     text-align: center;
-    border-radius: 20px;
+    border-radius: 5px;
     animation: content .5s 2.2s both;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 40px rgb(0, 0, 0);
     overflow: hidden;
     width: 55em;
     height: 30em;
+    border-radius: 20px;
 }
 
 .left {
-    width: 25%;
+    width: 20%;
     background: #ff69699e;
     padding: 1em;
     display: flex;
     flex-direction: column;
 }
 
-.left .avatar img {
+.avatar img {
     border-radius: 100%;
     border: 5px #fff solid;
+    /* width: 90%; */
+    /* margin: 5% 5%; */
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 }
 
 .left .menu {
@@ -387,12 +391,15 @@ main .content {
 }
 
 .left .menu li {
-    margin-top: 1em;
+    /* margin-top: 1.2em; */
 }
 
 .left .menu li a {
     color: white;
     cursor: pointer;
+    font-size: 22px;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.8);
+    /* margin-top: 20px; */
 }
 
 .left .copyright {
@@ -409,6 +416,8 @@ main .content {
 .right {
     flex: 1;
     padding: 1em;
+    /* min-height: 500px; */
+    overflow: scroll;
 }
 
 .right section {
@@ -422,7 +431,9 @@ main .content {
 section {
     -webkit-animation: fadenum .5s;
     -moz-animation: fadenum .5s;
-    animation: fadenum .5s;
+    animation: fadenum 0.5s;
+    /* transition: 10s 1s height ease; */
+    /* overflow: scroll; */
 }
 
 /* Footer */
@@ -554,15 +565,22 @@ footer #hitokoto {
 
 /* Hack for mobile */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
 
     /* Main */
     .right {
         display: block;
         width: 100%;
         padding: 1em;
-        max-height: 20em;
-        overflow: hidden;
+        height: 20em;
+        overflow: scroll;
+        /* transition: 1s 1s height ease; */
+    }
+    .left .menu li a {
+        font-size:20px;
+    }
+    .avatar img{
+        width: 100pt;
     }
 
     .left {
@@ -579,12 +597,14 @@ footer #hitokoto {
         align-items: center;
         justify-content: center;
         margin-top: 0;
+        font-size: 20px;
     }
 
     .left .menu li {
-        width: 50%;
+        width: 33%;
         padding: .5em 0;
         display: inline-block;
+        margin-top: .5em;
     }
 
     .avatar {
@@ -596,16 +616,21 @@ footer #hitokoto {
     }
 
     main {
-        width: 100%;
+        /* width: 100%; */
         max-width: 22em;
+        /* height: 30em; */
+        /* animation: auto; */
+        /* transition: 1s 1s height ease; */
+        /* position: relative; */
+        /* top: -90px; */
     }
 
     main .content {
         display: block;
         margin: 5em 0 1em 0;
         width: 100%;
-        height: 35em;
         overflow: visible;
+        border-radius: 5px;
     }
 
     footer {
@@ -667,6 +692,7 @@ footer #hitokoto {
     #contact .items a i {
         font-size: 2em;
         margin-top: .2em;
+        height: 32px;
     }
 
     #contact .items a span {
@@ -675,18 +701,18 @@ footer #hitokoto {
 
     #donate h1 {
         margin-top: .3em;
-        font-size: 2em;
+        font-size: 1.3em;
     }
 
     #donate .donate-img-box {
         margin: .5em auto 1em auto;
-        max-width: 20em;
-        max-height: 15.5em;
+        max-width: 30em;
+        /* min-height: 15.5em; */
     }
 
     #donate .donate-img-box img {
         margin: .1em;
-        width: 40%;
+        /* width: 40%; */
     }
 
     #donate p {
