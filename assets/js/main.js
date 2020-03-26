@@ -1,12 +1,14 @@
 var api = "https://www.icystal.top/";
 
-$(document).onload(function () {
-    $(".loading").hide();
+$(document).ready(function () {
     getAchives();
     gethitokoto();
     getfriends();
 });
-
+$(document).onload(function(){
+    $(".loading").hide();
+    $(".conetnt").fadeIn();
+});
 $('.menu a').click(function () {
     target = $(this).attr('goto');
     switchTo(target);
