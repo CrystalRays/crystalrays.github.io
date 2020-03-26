@@ -1,6 +1,6 @@
 var api = "https://www.icystal.top/";
 
-$(document).ready(function () {
+$(document).onload(function () {
     $(".loading").hide();
     getAchives();
     gethitokoto();
