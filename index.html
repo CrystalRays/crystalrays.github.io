@@ -24,7 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script>
-        window.onload=function(){
+        function loaded(){
             $(".loading").hide();
             $(".content").fadeIn();
             $("footer").fadeIn();
@@ -43,7 +43,7 @@
             <div class="rect5"></div>
         </div>
     </div>
-
+    <div id="background-small" onload="loaded()"></div>
     <!-- Main box -->
     <main>
         <div class="content" style="display: none;">
