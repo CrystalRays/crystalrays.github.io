@@ -417,9 +417,10 @@ main .content {
     flex: 1;
     padding: 1em;
     /* min-height: 500px; */
-    overflow: scroll;
+    overflow: scroll -moz-scrollbars-none; 
+    -ms-overflow-style: none;
 }
-
+.right::-webkit-scrollbar{width:0}
 .right section {
     display: none;
 }
