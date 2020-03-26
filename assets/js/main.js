@@ -5,10 +5,11 @@ $(document).ready(function () {
     gethitokoto();
     getfriends();
 });
-$(document).onload(function(){
+
+window.οnlοad=function(){
     $(".loading").hide();
     $(".conetnt").fadeIn();
-});
+};
 $('.menu a').click(function () {
     target = $(this).attr('goto');
     switchTo(target);
