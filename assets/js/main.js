@@ -41,7 +41,7 @@ function getfriends(){
         dataType: "json",
         success: function (json) {
             for (var i = 0; i < json.length; i++) {
-                if(json[i].id==21){
+                if(json[i].id==907){
                     $(".donate-img-box").html(json[i].content.rendered.replace("top: -105px","display:none"));
                     break;
                 }
