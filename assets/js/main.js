@@ -52,7 +52,7 @@ function getfriends(){
 function gethitokoto() {
     $.ajax({
         url: "https://v1.hitokoto.cn/",
-        dataType: "jsonp",
+        dataType: "json",
         async: true,
         jsonp: "callback",
         jsonpCallback: "echokoto",
